@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>beketov-dzmitry</title>
+  <link rel="prgieconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Smooch+Sans:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about_me.css">
+</head>
+<body>
+
+<div class="container">
+  <nav>
+    <ul class="site-nav">
+      <li><a href="#p1">Something_about_me</a></li>
+      <li><a href="#p2">Education</a></li>
+      <li><a href="#p3">Example_of_code</a></li>
+      <li><a href="#p4">Places</a></li>
+      <li><a href="#p5">some_links</a></li>
+    </ul>
+  </nav>
+  <hr>
+
+  <div class="me description" id="p1">
+    <div class="header part1">
+      1. About_Myself  <img src="man.png" width="50">
+    </div>
+    <div class="flexp">
+      <div class="photo_and_ages">
+        <div class="image"></div>
+        <div class="name">Beketov_Dima</div>
+        <div class="btv-friends">(but_for_friends) Bima_Deketov:)</div>
+      </div>
+      <div class="description_and_ages">
+        <div class="container_for_description">
+          <div class="description1">Hello. I was born and raised in Bobruisk. A beautiful city with many interesting places. The place where I spent my happy childhood, where my first friends and academic success were. Next was the city of Minsk, where I studied at the Lyceum. The place where I met perhaps the best people in my life, knew the first love and the first parting. I have always been interested in physics, so I participated in the Olympiads.</div>
+        </div>
+        <div class="container_ages">
+          AGES:
+          <button class="increment btn" id="open" onclick="increment()">+</button>
+          <div class="value age btn" id="count-el">0</div>
+          <button class="decrement btn" id="decrement-btn" onclick="decrement()">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="part2">
+    <div class="lists_and_map">
+      <div class="lists">
+        <div class="education">
+          <div class="header_part2" id = "p2">2. Education <img src="school.png " width="50"></div>
+          <div class="places">Places of study</div>
+          <ul class="list_of_education">
+            <li>Gymnazium №2</li>
+            <li>MSRL</li>
+            <li>BSU FAMCS</li>
+          </ul>
+
+          <div class="language">Languages</div>
+          <ul class="list_of_languge">
+            <li>Russian: Native</li>
+            <li>English: A2</li>
+            <li>Polish: A2</li>
+          </ul>
+        </div>
+        <div class="Code">Code</div>
+        <ul class="list_of_code">
+          <li>C++ (Basics, OOP)</li>
+          <li>HTML, CSS</li>
+          <li>JavaScript (Basics)</li>
+        </ul>
+        <div class="map">
+          <div class="header_map" id="p4">4. Places </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380784.6102277432!2d27.423850271093606!3d53.90055817656626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1647871647621!5m2!1sru!2sby" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="example_of_code" id="p3">
+      <div class="header_of_code">3. Example_of_code <img src="technical-support%20(1).png" width="50"></div>
+      <dix class="description_code">Template Stack on C++</dix>
+      <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><span class="hljs-keyword" style="font-weight: 700;">template</span> &lt;<span class="hljs-keyword" style="font-weight: 700;">class</span> Type&gt;
+<span class="hljs-keyword" style="font-weight: 700;">class</span> Stack
+{
+<span class="hljs-keyword" style="font-weight: 700;">private</span>:
+
+	Type st[MAX];
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> top;
+<span class="hljs-keyword" style="font-weight: 700;">public</span>:
+
+	Stack();
+	<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">push</span><span class="hljs-params">(Type var)</span></span>;
+	<span class="hljs-function">Type <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">pop</span><span class="hljs-params">()</span></span>;
+};
+
+<span class="hljs-keyword" style="font-weight: 700;">template</span>&lt;<span class="hljs-keyword" style="font-weight: 700;">class</span> Type&gt;
+Stack&lt;Type&gt;::Stack()
+{
+	top = <span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>;
+}
+
+<span class="hljs-keyword" style="font-weight: 700;">template</span>&lt;<span class="hljs-keyword" style="font-weight: 700;">class</span> Type&gt;
+<span class="hljs-keyword" style="font-weight: 700;">void</span> Stack&lt;Type&gt;::push(Type var)
+{
+	st[++top] = var;
+}
+
+<span class="hljs-keyword" style="font-weight: 700;">template</span>&lt;<span class="hljs-keyword" style="font-weight: 700;">class</span> Type&gt;
+Type Stack&lt;Type&gt;::pop()
+{
+	<span class="hljs-keyword" style="font-weight: 700;">return</span> st[top--];
+}</pre>
+      <div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+  <footer id="p5">
+    <div class="thanks">Thanks_for_watching...</div>
+    <ul class="links">
+      <li><a href="https://t.me/cztotychoczeh"><img src="telegram.png" width="30"></a></li>
+      <li><a href="https://github.com/beketov-dmitry"><img src="github.png" width="30"></a></li>
+      <li><a href="https://vk.com/bimadeketov"><img src="vk.png" width="30"></a></li>
+    </ul>
+  </footer>
+
+
+  <div class="modal" id="modal">
+    <div class="background"></div>
+    <div class="modal-body">
+      <button class="close" id="close">&times;</button>
+      <div class="header_modal">Yeeeeeeees!</div>
+      <div class="text_modal">I'm 18 years old</div>
+      <div class="fire"><img src="fireworks.png" width="50"></div>
+    </div>
+  </div>
+
+
+</div>
+<script>
+  let countEl=document.getElementById("count-el");
+  let count=0;
+
+  function increment(){
+    count=count+1;
+    countEl.innerText=count;
+    return count
+  }
+
+  function decrement(){
+    if(count<=0){
+      count = 0;
+    }else {count=count-1;}
+    countEl.innerText=count;
+    return count;
+  }
+
+
+  var button = document.getElementById('open');
+  var close = document.getElementById('close');
+  var modal = document.getElementById('modal');
+
+  button.addEventListener('click', function(event) {
+    if (count===18) {
+      event.preventDefault();
+      modal.style.display = 'block';
+    }
+  });
+
+  close.addEventListener('click', function(event) {
+    event.preventDefault();
+    modal.style.display = 'none';
+  });
+
+</script>
+</body>
+</html>
